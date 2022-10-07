@@ -75,6 +75,18 @@ const movieList = [
     title: "Mad Max",
     imageUrl: "./Mad Max.jpg",
     description: "Mad Max"
+  },
+  {
+    id: 10,
+    title: "Weekend at Bernie's",
+    imageUrl: "./WeekendatBernies.jpg",
+    description: "Weekend at Bernie's"
+  },
+  {
+    id: 11,
+    title: "Pineapple Express",
+    imageUrl: "./Pineapple Express.jpg",
+    description: "Pineapple Express"
   }
 
 ] as Movie[]

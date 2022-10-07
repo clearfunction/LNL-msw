@@ -2,7 +2,6 @@
 .movie-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow-y: scroll;
 }
 
 .app{
@@ -34,6 +33,10 @@
   }
 }
 
+.movie-details{
+  padding-left: 1rem;
+  position: fixed;
+}
 .movie-details h3{
   text-align: center;
 }
