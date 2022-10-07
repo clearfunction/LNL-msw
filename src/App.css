@@ -1,0 +1,39 @@
+
+.movie-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-y: scroll;
+}
+
+.app{
+  display: grid;
+  grid-template-columns: 1fr .6fr;
+}
+
+
+.movie-list > div > img{
+   width:100%;
+   cursor: pointer;
+}
+.image-container,
+.detail-image{
+    position: relative;
+}
+
+.detail-image{
+  animation: selectedImage 1.2s forwards;
+  height: auto;
+}
+
+@keyframes selectedImage{
+
+  100%{
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.movie-details h3{
+  text-align: center;
+}
