@@ -36,6 +36,7 @@
 .movie-details{
   padding-left: 1rem;
   position: fixed;
+  width: 35%;
 }
 .movie-details h3{
   text-align: center;

@@ -87,6 +87,30 @@ const movieList = [
     title: "Pineapple Express",
     imageUrl: "./Pineapple Express.jpg",
     description: "Pineapple Express"
+  },
+  { 
+    id: 12,
+    title: "Scott Pilgrim vs the world",
+    imageUrl: "./3-scott-pilgrim-vs-the-world-clyde-allen.jpg",
+    description: "Scott Pilgrim vs the world"
+  },
+  {
+    id: 13,
+    title: "Little House on the Prairie",
+    imageUrl: "./Littlehouse.png",
+    description: "Little House on the Prairie"
+  },
+  {
+    id: 14,
+    title: "Obi Wan Kenobi",
+    imageUrl: "./ObiWan.png",
+    description: "Obi Wan Kenobi"
+  },
+  {
+    id: 15,
+    title: "Step Brothers",
+    imageUrl: "./StepBrothers.png",
+    description: "Step Brothers"
   }
 
 ] as Movie[]
