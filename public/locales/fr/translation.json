@@ -1,0 +1,6 @@
+{
+  "title": "Bienvenue à réagir en utilisant react-i18next et msw",
+  "movieInfo": {
+    "title": "Titre: {{title}}"
+  }
+}

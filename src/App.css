@@ -1,7 +1,18 @@
-
-.movie-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+h2{
+  margin: 0;
+}
+h3{
+  text-align: left;
+  margin:0;
+  margin-top: .5rem;
+}
+h4{
+  padding-left: 1rem;
+  margin:0;
+}
+.image-container{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .app{
@@ -9,11 +20,16 @@
   grid-template-columns: 1fr .6fr;
 }
 
+.movie-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-.movie-list > div > img{
+.movie-list img{
    width:100%;
    cursor: pointer;
 }
+
 .image-container,
 .detail-image{
     position: relative;
@@ -25,7 +41,6 @@
 }
 
 @keyframes selectedImage{
-
   100%{
     top: 0;
     left: 0;
@@ -38,6 +53,8 @@
   position: fixed;
   width: 35%;
 }
-.movie-details h3{
-  text-align: center;
+
+textarea{
+  width: 100%;
+  height: 5rem;
 }

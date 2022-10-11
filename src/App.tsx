@@ -1,4 +1,5 @@
-import { ChangeEvent, useEffect, useRef, useState } from 'react';
+import { ChangeEvent, Suspense, useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './App.css';
 import { useService } from './services/services';
 import { Movie } from './services/types';
@@ -11,7 +12,8 @@ function App() {
   const imageContainer = useRef<HTMLDivElement | null>(null);
   const descriptionRef = useRef<HTMLTextAreaElement | null>(null);
   const [description, setDescription] = useState<string>('');
-  
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     Promise.all([getMovies()])
     .then(() => {
@@ -54,41 +56,57 @@ function App() {
   }
 
   return (
-    <div className="app" selected-movie={selectedMovie ? "selected" : undefined}>
+    <Suspense fallback="loading">
       <div>
-        {movies && (
-          <>
-            <div className="movie-list">
-              {movies!.movies.map((movie, index) => (
-                <div key={movie.id} onClick={() => onMovieSelected(movie, index)}>
-                  <img ref={el => images.current[index] = el} src={movie.imageUrl} alt={movie.title} />
-                </div>
-              ))}
-            </div>
-          </>
-        )}
+          <h1>{t('title')}</h1>
       </div>
-      <div>
-          <div className="movie-details">
-            {selectedMovie && (
-              <h3>
-                {selectedMovie.title}
-              </h3>
-            )}
-            <div ref={imageContainer} className="image-container">
-              <img className="detail-image" ref={detailImage}/>
-            </div>
-              <>
-                <div>
-                  <textarea ref={descriptionRef} onChange={onDescriptionChange} />
-                </div>
-                <div>
-                  <button type="button" onClick={onSave}>Save</button>
+      <div className="app" selected-movie={selectedMovie ? "selected" : undefined}>
+        <div>
+          {movies && (
+            <>
+              <div className="movie-list">
+                {movies!.movies.map((movie, index) => (
+                  <div key={movie.id} onClick={() => onMovieSelected(movie, index)}>
+                    <img ref={el => images.current[index] = el} src={movie.imageUrl} alt={movie.title} />
+                  </div>
+                ))}
               </div>
             </>
+          )}
+        </div>
+        <div>
+            <div className="movie-details">
+              {selectedMovie && (
+                <>
+                  <h2>
+                    {t('movieInfo.title',{title: selectedMovie.title})}
+                  </h2>
+                  {selectedMovie.actors && (
+                    <>
+                      <h3>{t('movieInfo.actors')}</h3>
+                      {selectedMovie.actors.map((actor, index) => (
+                        <h4 key={index}>{actor}</h4>
+                      ))}
+                    </>
+                  )}
+                </>
+              )}
+              <div ref={imageContainer} className="image-container">
+                <img className="detail-image" ref={detailImage}/>
+              </div>
+                <>
+                    <h3>{t('movieInfo.description')}</h3>
+                  <div>
+                    <textarea ref={descriptionRef} onChange={onDescriptionChange} />
+                  </div>
+                  <div>
+                    <button type="button" onClick={onSave}>Save</button>
+                </div>
+              </>
+          </div>
         </div>
       </div>
-    </div>
+    </Suspense>
   )
 }
 

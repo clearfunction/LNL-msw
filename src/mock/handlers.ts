@@ -32,7 +32,8 @@ const movieList = [
     id: 8,
     title: "Safe At Home",
     imageUrl: "./safe at home.jpg",
-    description: "Safe at Home"
+    description: "Safe at Home",
+    actors: ["Kevin Schultz"]
   },
   {
     id: 2,
@@ -44,73 +45,85 @@ const movieList = [
     id: 3,
     title: "Harry Potter",
     imageUrl: "https://i.ebayimg.com/images/g/HP0AAOSwKIpV-vwL/s-l500.jpg",
-    description: "Harry Potter"
+    description: "Harry Potter",
+    actors: []
   },
   {
     id: 7,
     title: "The Last Witch Hunter",
     imageUrl: "./TheLastWitchHunter.png",
-    description: "The Last Witch Hunter"
+    description: "The Last Witch Hunter",
+    actors: ['Brian Lankford']
   },
   {
     id: 4,
     title: "Captain Marvel",
     imageUrl: "https://akns-images.eonline.com/eol_images/Entire_Site/2018112/rs_634x939-181202195654-634.captain-marvel.12418.jpg",
-    description: "Captain Marvel"
+    description: "Captain Marvel",
+    actors: []
   },
   {
     id: 5,
     title: "Matrix",
     imageUrl: "https://www.themoviedb.org/t/p/original/vybQQ7w7vGvF53IsGD0y0JSgIsA.jpg",
-    description: "Matrix"
+    description: "Matrix",
+    actors: []
   },
   {
     id: 6,
     title: "The Incredibles",
     imageUrl: "https://i.ebayimg.com/images/g/3S8AAOSwAQpfjVRI/s-l500.jpg",
-    description: "The Incredibles"
+    description: "The Incredibles",
+    actors: []
   },
   {
     id: 9,
     title: "Mad Max",
     imageUrl: "./Mad Max.jpg",
-    description: "Mad Max"
+    description: "Mad Max",
+    actors: ['David Mohundro']
   },
   {
     id: 10,
     title: "Weekend at Bernie's",
     imageUrl: "./WeekendatBernies.jpg",
-    description: "Weekend at Bernie's"
+    description: "Weekend at Bernie's",
+    actors: ['Stephen Overholser']
   },
   {
     id: 11,
     title: "Pineapple Express",
     imageUrl: "./Pineapple Express.jpg",
-    description: "Pineapple Express"
+    description: "Pineapple Express",
+    actors: ['Jack Cannon']
   },
   { 
     id: 12,
     title: "Scott Pilgrim vs the world",
     imageUrl: "./3-scott-pilgrim-vs-the-world-clyde-allen.jpg",
-    description: "Scott Pilgrim vs the world"
+    description: "Scott Pilgrim vs the world",
+    actors: ['Tylon Beckwith']
   },
   {
     id: 13,
     title: "Little House on the Prairie",
     imageUrl: "./Littlehouse.png",
-    description: "Little House on the Prairie"
+    description: "Little House on the Prairie",
+    actors: ['John Thomas']
   },
   {
     id: 14,
     title: "Obi Wan Kenobi",
     imageUrl: "./ObiWan.png",
-    description: "Obi Wan Kenobi"
+    description: "Obi Wan Kenobi",
+    actors: ['Colin Neller']
   },
   {
     id: 15,
     title: "Step Brothers",
     imageUrl: "./StepBrothers.png",
-    description: "Step Brothers"
+    description: "Step Brothers",
+    actors: ['Gerrin Paradis']
   }
 
 ] as Movie[]

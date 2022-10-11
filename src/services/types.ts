@@ -3,6 +3,7 @@ export interface Movie {
   title: string;
   imageUrl: string;
   description: string;
+  actors: string[];
 }
 
 export interface Movies {

@@ -1,0 +1,8 @@
+{
+  "title": "Welcome to react using react-i18next and msw",
+  "movieInfo": {
+    "title": "Title: {{title}}",
+    "description": "Description:",
+    "actors": "Actors:"
+  }
+}

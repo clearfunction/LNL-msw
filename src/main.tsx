@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './i18n';
 import './index.css';
 import { worker } from './mock/browser';
 
-var bob = import.meta.env.VITE_Mock;
 
-console.log(bob)
-
- worker.start();
+worker.start();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
