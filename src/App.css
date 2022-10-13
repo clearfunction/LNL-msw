@@ -17,12 +17,12 @@ h4{
 
 .app{
   display: grid;
-  grid-template-columns: 1fr .6fr;
+  grid-template-columns: 1fr .4fr;
 }
 
 .movie-list{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .movie-list img{
@@ -51,7 +51,7 @@ h4{
 .movie-details{
   padding-left: 1rem;
   position: fixed;
-  width: 35%;
+  width: 27.5%;
 }
 
 textarea{
