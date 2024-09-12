@@ -21,6 +21,6 @@
     "@vitejs/plugin-react": "^2.1.0",
     "msw": "^0.47.4",
     "typescript": "^4.6.4",
-    "vite": "^3.2.7"
+    "vite": "^3.2.10"
   }
 }
